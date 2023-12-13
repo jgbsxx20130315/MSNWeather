@@ -267,7 +267,7 @@ def get_background_by_icon(icon):
 
 if __name__ == '__main__':
     st = time.time()
-    weather_info = get_current_weather_info()
+    weather_info = get_current_weather_info(lat=36.71873092651367, lon=117.23501586914062)
     if weather_info:
         info = {
             "background_img_url": get_background_by_icon(weather_info["symbol"]),
